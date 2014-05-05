@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Data Analysis Project - Categories</title>
+    <title>Project Report</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -1717,10 +1717,10 @@ init_mathjax();
 
 
     <!-- Open Graph tags -->
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Data Analysis Project"/>
-            <meta property="og:url" content="http://skohkura.github.io/data-analysis-template"/>
-            <meta property="og:description" content="Data Analysis Project"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="Project Report"/>
+            <meta property="og:url" content="http://skohkura.github.io/data-analysis-template/nb4.html"/>
+            <meta property="og:description" content="Project Report¶ Our problem as stated in the propectus¶ Our problem was to look at the closing stock prices of 12 different nations around the world, including the US, and see how fluctuations in these prices depended on one another. Specifically, we wanted to look at the relation between US ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://skohkura.github.io/data-analysis-template/theme/css/bootstrap.min.css" type="text/css"/>
@@ -1788,27 +1788,110 @@ Data Analysis Project            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="categories">
-        <h1>All Categories for Data Analysis Project</h1>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-misc">misc <span class="badge pull-right">4</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-misc" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://skohkura.github.io/data-analysis-template/nb4.html"
+                       rel="bookmark"
+                       title="Permalink to Project Report">
+                        Project Report
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2014-03-04T00:00:00">Tue 04 March 2014</time></span> <a href="http://skohkura.github.io/data-analysis-template/nb4.html">Project Report</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2014-03-03T00:00:00">Mon 03 March 2014</time></span> <a href="http://skohkura.github.io/data-analysis-template/nb3.html">Data Analysis</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2014-03-01T00:00:00">Sat 01 March 2014</time></span> <a href="http://skohkura.github.io/data-analysis-template/nb1.html">Data Gathering</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2014-02-28T00:00:00">Fri 28 February 2014</time></span> <a href="http://skohkura.github.io/data-analysis-template/reproducibility.html">Reproducibility</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-04T00:00:00">Tue 04 March 2014</time>
+    </span>
 
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Project-Report">Project Report<a class="anchor-link" href="#Project-Report">&#182;</a></h1>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Our-problem-as-stated-in-the-propectus">Our problem as stated in the propectus<a class="anchor-link" href="#Our-problem-as-stated-in-the-propectus">&#182;</a></h2>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our problem was to look at the closing stock prices of 12 different nations around the world, including the US, and see how fluctuations in these prices depended on one another. Specifically, we wanted to look at the relation between US stocks and stocks from foreign nations.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Our-data-sources,-their-format,-and-the-difficulties-to-get-them">Our data sources, their format, and the difficulties to get them<a class="anchor-link" href="#Our-data-sources,-their-format,-and-the-difficulties-to-get-them">&#182;</a></h2>
+</div>
+
+Our data came in the form of 12 timeseries. Retrieving them was very simple using the Pandas method DataReader, which is compatible with the Yahoo Finance API
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Main-challenge">Main challenge<a class="anchor-link" href="#Main-challenge">&#182;</a></h2>
+</div>
+
+Narrowing down the large amount of data into smaller data sets from which we could extract meaningful comparisons.
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Our-Findings">Our Findings<a class="anchor-link" href="#Our-Findings">&#182;</a></h1>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Measuring-the-Dependence-of-Each-Country-on-Other-Countries">Measuring the Dependence of Each Country on Other Countries<a class="anchor-link" href="#Measuring-the-Dependence-of-Each-Country-on-Other-Countries">&#182;</a></h3>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>There is a pattern that export-orientated economics (Cancada, Germany, Sweden, Taiwan, etc.) tend to have higher correlations with other economics' performance. In other words, they are more independent of other economics to do well in order for them to do well.</p></li>
+<li><p>We see that the US is by far the most independent of the 11 countries. This concurs with our conclusion because US is a consuming imports from other countries and have a well-rounded trade relation with them.</p></li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="US-Specific-Correlations">US Specific Correlations<a class="anchor-link" href="#US-Specific-Correlations">&#182;</a></h2>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>The UK has the highest correlation with the US. This makes sense as its known that the two nations are heavily involved. From Wikipedia, we see that &quot;The UK has always been the biggest foreign investor in the US and vice versa.&quot; (http://en.wikipedia.org/wiki/United_Kingdom%E2%80%93United_States_relations). This is referred to as the &quot;special relationship&quot; between the US and UK.</p></li>
+<li><p>Japan and US have a near-zero correlation, despite their good economic ties. This can be explained by Japan's economic troubles over the past decade. (http://qz.com/198458/zombies-once-destroyed-japans-economy-now-theyre-infecting-chinas/)</p></li>
+<li><p>European (excluding UK) countries are all very closely tied, with correlation near 1 between each pair.</p></li>
+<li><p>Despite these close ties, the correlations between France and the Netherlands and the US are much lower than that of Germany and Sweden. Any idea of an explanation for this?</p></li>
+<li><p>Generally, the US has much less of a dependence on foreign nations than other countries.</p></li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Looking-specifically-at-European-countries">Looking specifically at European countries<a class="anchor-link" href="#Looking-specifically-at-European-countries">&#182;</a></h2>
+</div>
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>As we would expect, UK, France, Germany, Sweden, and the Netherlands corrrelate highly with each other.</li>
+<li>Germany, Sweden, and the Netherlands all have the lowest correlation with the UK compared to other continental Enropean countries because UK is still not part of the eurozone.</li>
+</ul>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb">
+</pre></div>
+
+</div>
+</div>
+
+</div></p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3 well well-sm" id="sidebar">
 
